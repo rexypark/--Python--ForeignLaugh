@@ -109,7 +109,7 @@ $(function(){
         <div class="w3-container w3-card w3-white w3-round w3-margin" style="cursor:pointer;"
              onclick="location.href='{{v.url}}';"> <!--onclick="location.href={{board.content}}"-->
             <!--<span class="w3-right w3-opacity">1 min</span>-->
-            <h4>{{v.title}}</h4><h10> {{v.homePage}} </h10>{{v.date|date:'Y-m-d'}}<div class="w3-right-align"></div></h10><br>
+            <h4>{{v.title}}</h4>{{v.date|date:'Y-m-d'}}</h10>&nbsp;&nbsp;|&nbsp;<h10> {{v.homePage}} </h10><br>
         </div>
         {% endfor %}
 
