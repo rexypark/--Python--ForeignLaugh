@@ -12,8 +12,7 @@
 <link rel="stylesheet" href="/static/css/login.css">
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
-*{margin:0;
-padding:0;}
+*{margin:0; padding:0; color:#666666;}
 
 
 
@@ -37,27 +36,63 @@ $(function(){
 
 </script>
 
+<!--&lt;!&ndash; Navbar &ndash;&gt;-->
+<!--<div class="w3-top w3-margin-top:-10">-->
+    <!--<div style="display:inline-block" class="w3-bar w3-theme-d2 w3-left-align w3-large">-->
+        <!--<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"-->
+           <!--href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>-->
+        <!--<a href="#" class="w3-bar-item w3-button w3-padding-16 w3-theme-d4" style="width:10%">-->
+                <!--<!—<i class="fa fa-home w3-margin-right"></i>-->
+                    <!--<img src="/static/smile.png" class="img-thumbnail" class="padding-5"-->
+                          <!--style="width:60%"></a>-->
+
+
+        <!--&lt;!&ndash;<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"&ndash;&gt;-->
+        <!--&lt;!&ndash;title="My Account" onclick="my_click()">&ndash;&gt;-->
+        <!--&lt;!&ndash;sign in&ndash;&gt;-->
+
+        <!--<div style="text-align:center;height:100%;top:100%;margin-top:20px">-->
+            <!--afejilwefijrgjowefirgi-->
+        <!--</div>-->
+        <!--<script>-->
+      <!--&lt;!&ndash;function my_click() {location='/sign_in/'}&ndash;&gt;-->
+
+
+
+        <!--</script>-->
+
+    <!--</div>-->
+
+
+<!--</div>-->
+
 <!-- Navbar -->
 <div class="w3-top w3-margin-top:-10">
     <div style="display:inline-block" class="w3-bar w3-theme-d2 w3-left-align w3-large">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
-           href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-theme-d4" style="width:10%">
-                <!—<i class="fa fa-home w3-margin-right"></i>
+        <!--<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"-->
+           <!--href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>-->
+        <!--<a href="#" class="w3-bar-item w3-button w3-padding-16 w3-theme-d4" style="width:10%">-->
+                <!--&lt;!&ndash;<i class="fa fa-home w3-margin-right"></i>&ndash;&gt;-->
+                    <!--<img src="/static/smilelogo.png" class="img-thumbnail" class="padding-5"-->
+                          <!--style="width:60%" ></a>-->
+
+
+
+
+        <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"—>-->
+           <!--<!—title="My Account" onclick="my_click()">—>-->
+            <!--<!—sign in—>-->
+        </a>
+        <div style="text-align:center;height:100%;top:">
+                    <a href="#" class="w3-button w3-padding-16 w3-theme-d2" style="width:10%">
+                <!--<i class="fa fa-home w3-margin-right"></i>-->
                     <img src="/static/smile.png" class="img-thumbnail" class="padding-5"
-                          style="width:60%"></a>
+                          style="width:100%" ></a>
 
-
-        <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"-->
-        <!--title="My Account" onclick="my_click()">-->
-        <!--sign in-->
-
-        <div style="text-align:center;height:100%;top:100%;margin-top:20px">
-            afejilwefijrgjowefirgi
+            <strong style="fontsize = 15px">Foreign Laugh</strong>
         </div>
         <script>
-      <!--function my_click() {location='/sign_in/'}-->
-
+      <!—function my_click() {location='/sign_in/'}—>
 
 
         </script>
@@ -66,6 +101,10 @@ $(function(){
 
 
 </div>
+
+
+
+
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-theme-l4 w3-hide w3-hide-large w3-hide-medium w3-large">
@@ -108,7 +147,7 @@ $(function(){
         {% for v in page_info %}
         <!--창을 클릭하면 바로 링크로 이어지게 하는 코드-->
         <div class="w3-container w3-card w3-white w3-round w3-margin" style="cursor:pointer;margin-top:30px;"
-             onclick="location.href='{{v.url}};'"> <!--onclick="location.href={{board.content}}"-->
+             onclick="location.href='{{v.url}}';"> <!--onclick="location.href={{board.content}}"-->
             <!--<span class="w3-right w3-opacity">1 min</span>-->
             <h4
              style="
