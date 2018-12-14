@@ -12,17 +12,41 @@
 <link rel="stylesheet" href="/static/css/login.css">
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
-*{margin:0; padding:0; color:#666666;}
 
+* {margin:0; padding:0; color:#666666;}
 
+.laugh {
+    text-align:center;
+    height:81px;
+    padding-top: 16px;
+}
+@media (max-width:680px) {
+    .laugh{
+        padding-top: 26px;
+    }
+}
 
+.content {
+    margin-top: 80px;
+}
+@media (max-width:600px) {
+    .content{
+        margin-top: 60px;
+    }
+}
 
+.img-thumbnail {
+    width:50px;
+}
+@media (max-width:680px) {
+    .img-thumbnail {
+        width:30px;
+    }
+}
 </style>
 <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 <script>
-
-
 $(function(){
   $('.w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white').click(function(){
     $('.logmod').show();
@@ -33,66 +57,22 @@ $(function(){
 });
 
 
-
 </script>
-
-<!--&lt;!&ndash; Navbar &ndash;&gt;-->
-<!--<div class="w3-top w3-margin-top:-10">-->
-    <!--<div style="display:inline-block" class="w3-bar w3-theme-d2 w3-left-align w3-large">-->
-        <!--<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"-->
-           <!--href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>-->
-        <!--<a href="#" class="w3-bar-item w3-button w3-padding-16 w3-theme-d4" style="width:10%">-->
-                <!--<!—<i class="fa fa-home w3-margin-right"></i>-->
-                    <!--<img src="/static/smile.png" class="img-thumbnail" class="padding-5"-->
-                          <!--style="width:60%"></a>-->
-
-
-        <!--&lt;!&ndash;<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"&ndash;&gt;-->
-        <!--&lt;!&ndash;title="My Account" onclick="my_click()">&ndash;&gt;-->
-        <!--&lt;!&ndash;sign in&ndash;&gt;-->
-
-        <!--<div style="text-align:center;height:100%;top:100%;margin-top:20px">-->
-            <!--afejilwefijrgjowefirgi-->
-        <!--</div>-->
-        <!--<script>-->
-      <!--&lt;!&ndash;function my_click() {location='/sign_in/'}&ndash;&gt;-->
-
-
-
-        <!--</script>-->
-
-    <!--</div>-->
-
-
-<!--</div>-->
 
 <!-- Navbar -->
 <div class="w3-top w3-margin-top:-10">
     <div style="display:inline-block" class="w3-bar w3-theme-d2 w3-left-align w3-large">
-        <!--<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"-->
-           <!--href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>-->
-        <!--<a href="#" class="w3-bar-item w3-button w3-padding-16 w3-theme-d4" style="width:10%">-->
-                <!--&lt;!&ndash;<i class="fa fa-home w3-margin-right"></i>&ndash;&gt;-->
-                    <!--<img src="/static/smilelogo.png" class="img-thumbnail" class="padding-5"-->
-                          <!--style="width:60%" ></a>-->
 
-
-
-
-        <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"—>-->
-           <!--<!—title="My Account" onclick="my_click()">—>-->
-            <!--<!—sign in—>-->
         </a>
-        <div style="text-align:center;height:100%;top:">
-                    <a href="#" class="w3-button w3-padding-16 w3-theme-d2" style="width:10%">
+        <div class="laugh">
+                    <a href="#" class="w3-button w3-theme-d2" style="padding:0">
                 <!--<i class="fa fa-home w3-margin-right"></i>-->
-                    <img src="/static/smile.png" class="img-thumbnail" class="padding-5"
-                          style="width:100%" ></a>
+                    <img src="/static/smile.png" class="img-thumbnail" ></a>
 
-            <strong style="fontsize = 15px">Foreign Laugh</strong>
+            <strong>Foreign Laugh </strong>
         </div>
         <script>
-      <!—function my_click() {location='/sign_in/'}—>
+      <!--function my_click() {location='/sign_in/'}-->
 
 
         </script>
@@ -102,17 +82,7 @@ $(function(){
 
 </div>
 
-
-
-
-
 <!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-theme-l4 w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
-</div>
 
 <!-- The Grid -->
 <div class="w3-row">
@@ -126,64 +96,27 @@ $(function(){
     </div>
 
     <!-- Middle Column -->
-    <div class="w3-col m7" style="
-    margin-top: 50px;">
+    <div class="w3-col m7 content">
 
-        <!--<div class="w3-row-padding">-->
-        <!--<div class="w3-col m12">-->
-        <!--<div class="w3-card w3-round w3-white">-->
-        <!--<div class="w3-container w3-padding">-->
-        <!--<h6 class="w3-opacity">Social Media template by w3.css</h6>-->
-        <!--<p contenteditable="true" class="w3-border w3-padding">Status: Feeling Yellow</p>-->
-        <!--<button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <br>
-        <br>
+
+
+
+
 
 
         {% for v in page_info %}
         <!--창을 클릭하면 바로 링크로 이어지게 하는 코드-->
-        <div class="w3-container w3-card w3-white w3-round w3-margin" style="cursor:pointer;margin-top:30px;"
+        <div class="w3-container w3-card w3-white w3-round w3-margin" style="cursor:pointer;"
              onclick="location.href='{{v.url}}';"> <!--onclick="location.href={{board.content}}"-->
             <!--<span class="w3-right w3-opacity">1 min</span>-->
-            <h4
-             style="
-             font-family:
-             Tamil Sangam;">{{v.title}}</h4>
-            <h10> {{v.homePage}}</h10>
-            <br>
-            <h10>{{v.date|date:'Y-m-d'}}</h10>
-            <br>
+            <h4>{{v.title}}</h4><h10> {{v.homePage}} </h10>{{v.date|date:'Y-m-d'}}<div class="w3-right-align"></div></h10><br>
         </div>
         {% endfor %}
 
 
-        </style>"
-        <!--<div class="w3-container w3-card w3-white w3-round w3-margin"><br>-->
-            <!--<span class="w3-right w3-opacity">1 min</span>-->
-            <!--<h4>-->
-                <!--<a href="https://cheezburger.com/7332869/50-of-the-most-loved-doggo-memes-of-2018-will-make-your-heart-feel-complete"-->
-                   <!--target="_self">50 Of The Most Loved Doggo Memes Of 2018 Will Make Your Heart Feel Complete</a>-->
-                <!--<p/>-->
-            <!--</h4>-->
-            <!--<br>-->
-            <!--<hr class="w3-clear">-->
-            <!--&lt;!&ndash;<img src="https://img-9gag-fun.9cache.com/photo/agnY1qg_460s.jpg" style="width:100%"&ndash;&gt;-->
-            <!--&lt;!&ndash;class="w3-margin-bottom">&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="w3-row-padding" style="margin:0 -16px">&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--<button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like-->
-            <!--</button>-->
-            <!--</button>-->
-            <!--<button type="button" class="w3-button w3-theme-l3 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment-->
-            <!--</button>-->
-        <!--</div>-->
 
-        <!--<p>page</p>-->
-        <!--<div class="w3-show-inline-block">-->
+
+
         <div class="w3-center" style="cursor:pointer;">
         <div class="w3-bar w3-border ">
             {% if start_page >= 11 %}
@@ -197,49 +130,6 @@ $(function(){
                 <a href="/main/?page={{ next_page }}" class="w3-bar-item w3-button">&raquo;</a>
             {% endif %}
 
-<!--<table border="1">-->
-    <!--<tr>-->
-        <!--<td>번호</td>-->
-        <!--<td>제목</td>-->
-        <!--<td>내용</td>-->
-    <!--</tr>-->
-    <!--{% for board in page_info %}-->
-    <!--<tr>-->
-        <!--<td>{{ board.id }}</td>-->
-        <!--<td>{{ board.title }}</td>-->
-        <!--<td>{{ board.content }}</td>-->
-    <!--</tr>-->
-    <!--{% endfor %}-->
-<!--</table>          -->
-
-
-<!--pagination-->
-<!--<div class="pagination">-->
-    <!--<span class="step-links">-->
-        <!--<div class="container">-->
-          <!--<ul class="pagination">-->
-              <!--{% if page_info.has_previous %}-->
-                  <!--<li class="page-item"><a class="page-link" href="?page=1">first</a></li>-->
-                  <!--<li class="page-item"><a class="page-link" href="?page={{ page_info.previous_page_number }}">Previous</a></li>-->
-              <!--{% endif %}-->
-              <!--{% for i in page_list%}-->
-                <!--&lt;!&ndash;{% if i == page%}&ndash;&gt;-->
-                    <!--&lt;!&ndash;<li class="page-item active"><a class="page-link" href="list2?page={{i}}">{{i}}</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;{%endif%}&ndash;&gt;-->
-                <!--&lt;!&ndash;{% if i != page%}&ndash;&gt;-->
-                    <!--&lt;!&ndash;<li class="page-item"><a class="page-link" href="list2?page={{i}}">{{i}}</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;{%endif%}&ndash;&gt;-->
-
-                <!--<li class="page-item {%if request.GET.page == i|slugify%} active{%endif%}"><a class="page-link" href="list2?page={{i}}">{{i}}</a></li>-->
-              <!--{%endfor%}-->
-              <!--{% if page_info.has_next %}-->
-                <!--<li class="page-item"><a class="page-link" href="?page={{ page_info.next_page_number }}">Next</a></li>-->
-                <!--<li class="page-item"><a class="page-link" href="?page={{ page_info.paginator.num_pages }}">List</a></li>-->
-              <!--{% endif %}-->
-          <!--</ul>-->
-        <!--</div>-->
-    <!--</span>-->
-<!--</div>-->
 
 
 
@@ -258,7 +148,7 @@ $(function(){
 
 <!-- Footer -->
 <footer class="w3-container w3-theme-d2 w3-padding-16">
-    <h5>Advertising</h5>
+    <h5>Advertising &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seoung9 gag 보는 Geu nhak에 사나</h5>
 
 </footer>
 
